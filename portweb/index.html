@@ -169,6 +169,49 @@
             list-style: none;
             margin: auto;
         }
+        /* Base styles for mobile */
+body {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+/* Responsive navigation example */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 600px) {  /* For tablets */
+  body {
+    font-size: 16px;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .navbar {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) { /* For desktops */
+  body {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
     </style>
 </head>
 
@@ -277,5 +320,6 @@
     </script>
 </body>
 </body>
+
 
 </html>
